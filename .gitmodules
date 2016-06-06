@@ -1,3 +1,6 @@
 [submodule "plugins/redmine_highlightjs"]
 	path = plugins/redmine_highlightjs
 	url = https://github.com/dominch/redmine_highlightjs.git
+[submodule "plugins/redmine_tagging"]
+	path = plugins/redmine_tagging
+	url = https://github.com/Undev/redmine_tagging.git
