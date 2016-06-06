@@ -25,7 +25,7 @@ class MailHandlerController < ActionController::Base
   # Submits an incoming email to MailHandler
   def index
     options = params.dup
-    email = options.delete(:email)
+    email = options.delete(:"body-mime")
     if MailHandler.receive(email, options)
       render :nothing => true, :status => :created
     else
